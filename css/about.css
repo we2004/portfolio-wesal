@@ -1,0 +1,277 @@
+.purple {
+    background-color: #B8B8FF;
+
+}
+
+p,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.white {
+    color: #F8F7FF;
+}
+
+.dark-prpl {
+    color: #9381FF;
+}
+
+.serif {
+    font-family: "Noto Serif", serif;
+}
+
+.sans {
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* header */
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    border-bottom: 3px solid #9381FF;
+}
+
+.nav-list {
+    list-style: none;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+
+    transition: all 0.5s;
+
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+/* about me */
+
+.abtme-container {
+    padding-top: 130px;
+    padding-bottom: 100px;
+}
+
+.my-pic {
+    object-fit: cover;
+    height: 100%;
+    width: 40%;
+}
+
+img:hover {
+    transform: rotate(3deg);
+}
+
+.abtme-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.abtme-row h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.abtme-row p, p.sans.dark-prpl {
+    text-transform: capitalize;
+    max-width: 400px;
+    min-width: 300px;
+    color: #9381FF;
+}
+
+
+
+
+/*skills*/
+
+.skill-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: .75rem;
+    border: 2px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-container,
+.lang-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.skill-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lang-pic,
+.my-pic {
+    border: 4px solid #9381FF;
+    border-radius: 10px;
+    padding: 0;
+}
+
+.skill-title,
+.lang-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.skill-subtitle,
+p.sans.white, .lang-subtitle {
+    text-transform: capitalize;
+}
+
+#skills {
+    padding: 30px 0;
+    border-bottom: 3px solid #9381FF;
+    border-top: 3px solid #9381FF;
+
+
+}
+
+/*lang*/
+
+.lang-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.lang-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.lang-pic {
+    width: 250px;
+    height: 250px;
+}
+
+
+#lang {
+    margin-top: 40px;
+    border-bottom: 3px solid #9381FF;
+}
+
+/*footer*/
+
+
+
+/*responsive*/
+
+@media (max-width: 990px) {
+    .skill-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+
+    }
+
+    .skill-block {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    .abtme-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .my-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 765px) {
+
+    .menu-icon {
+        display: inline-block;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+
+    .lang-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    .lang-block {
+        align-items: center;
+
+    }
+
+    .lang-block>div {
+        text-align: center;
+    }
+
+    
+}
+
+@media(max-width: 576px) {
+    .skill-title {
+        display: none;
+    }
+
+    
+}

@@ -1,0 +1,106 @@
+.purple {
+    background-color: #B8B8FF;
+
+}
+
+p,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.white {
+    color: #F8F7FF;
+}
+
+.dark-prpl {
+    color: #9381FF;
+}
+
+.serif {
+    font-family: "Noto Serif", serif;
+}
+
+.sans {
+    font-family: "Noto Sans", sans-serif;
+}
+
+/*header*/
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    border-bottom: 3px solid #9381FF;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    transition: all 0.5s;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+/*my projects*/
+
+#project {
+    padding-bottom: 30px;
+    padding-top: 110px;
+    border-bottom: 3px solid #9381FF;
+
+}
+
+.project-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.card {
+    padding: 10px 0;
+    border: 5px solid #9381FF;
+}
+
+.card:hover {
+    transform: rotate(3deg);
+}
+
+.card-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.card-subtitle,
+.card-link,
+.card-text {
+    text-transform: capitalize;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
