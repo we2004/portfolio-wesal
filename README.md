@@ -1,1 +1,1 @@
-I created this simple porfolio using html, css and bootstrap 
+I created this simple portfolio using html, css and bootstrap 
