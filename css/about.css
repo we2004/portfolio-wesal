@@ -28,11 +28,11 @@ h1 {
 /* header */
 header {
     position: fixed;
-    left: 0;
-    right: 0;
+    width: 100%;
     top: 0;
     padding-top: 10px;
     border-bottom: 3px solid #9381FF;
+    
 }
 
 .nav-list {
@@ -73,7 +73,7 @@ header {
 .my-pic {
     object-fit: cover;
     height: 100%;
-    width: 40%;
+    width: 350px;
 }
 
 img:hover {
@@ -94,7 +94,8 @@ img:hover {
     margin-bottom: 15px;
 }
 
-.abtme-row p, p.sans.dark-prpl {
+.abtme-row p,
+p.sans.dark-prpl {
     text-transform: capitalize;
     max-width: 400px;
     min-width: 300px;
@@ -151,7 +152,8 @@ img:hover {
 }
 
 .skill-subtitle,
-p.sans.white, .lang-subtitle {
+p.sans.white,
+.lang-subtitle {
     text-transform: capitalize;
 }
 
@@ -200,12 +202,14 @@ p.sans.white, .lang-subtitle {
 @media (max-width: 990px) {
     .skill-container {
         display: flex;
-        flex-direction: row;
+        /* flex-direction: row; */
         justify-content: space-between;
         align-items: center;
-        gap: 5rem;
-
+        /* gap: 5rem; */
+        margin-left: 20px;
     }
+
+
 
     .skill-block {
         display: flex;
@@ -243,14 +247,6 @@ p.sans.white, .lang-subtitle {
         display: none;
     }
 
-    .nav-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    
-
     .lang-pic {
         width: 150px;
         height: 150px;
@@ -265,7 +261,15 @@ p.sans.white, .lang-subtitle {
         text-align: center;
     }
 
-    
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+
+
+
 }
 
 @media(max-width: 576px) {
@@ -273,5 +277,5 @@ p.sans.white, .lang-subtitle {
         display: none;
     }
 
-    
+
 }
