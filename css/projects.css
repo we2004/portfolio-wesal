@@ -70,10 +70,9 @@ header {
 
 .project-row {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .card {
